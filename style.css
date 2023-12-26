@@ -8,6 +8,7 @@
 }
 
 @import url("https://fonts.google.com/specimen/Bebas+Neue?query=bebas");
+@import url("./mobilr.css");
 
 .header {
     display: flex;
@@ -50,7 +51,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    font-size: clamp(2rem, 20vh-1rem, 1rem);
+    font-size: clamp(1.8rem, 20vh-1rem, 1.2rem);
 
 
 
@@ -83,38 +84,36 @@
     display: flex;
     align-items: center;
     width: 100%;
-    display: block;
+    display: flex;
 
 
 }
 
 .our_products {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+
+
+.iamge {
+    flex: 1;
+    height: 50vh;
     width: 100%;
 }
 
-.iamge {
-    width: 50%;
-    height: 40rem;
-}
-
 .white_content {
+    flex: 1;
+    height: 50vh;
 
-    width: 50%;
+    /* width: 50%; */
     background-color: aliceblue;
-    height: 40rem;
-    font-size: clipt;
-
-
-
 }
 
 .white_content h3 {
     margin-top: 5rem;
-    margin-left: 5rem;
+    margin-left: 4rem;
     color: #61d4e7;
-    font-size: 4rem;
+    font-size: 3.7rem;
     font-weight: lighter;
 
 
@@ -144,10 +143,10 @@
 .white_content button {
     border: 2px solid #61d4e7;
 
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    margin-top: 2rem;
-    margin-left: 5rem;
+    margin-top: 1.8rem;
+    margin-left: 4rem;
     padding: 1rem;
 
 }
@@ -189,39 +188,52 @@
     background-color: #ed92ae;
 }
 
-.Portfolio {
+
+.Portfolio h2 {
     margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #ed92ae;
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 1.4rem;
+
 }
 
-.content_portfolio {
-    font-size: 1.5rem;
-    margin-top: 2rem;
 
+.content_portfolio {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1.4rem;
+    font-size: 1.6rem;
+    /* border: 1PX solid black; */
+
 
 }
 
 .content_portfolio h1 {
-    width: 35%;
-    margin-left: 10rem;
+    width: 34%;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1PX solid black; */
+
 }
 
 .grid {
-    display: grid;
+    /* border: 1PX solid black; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
 
-    margin-top: 2.5rem;
-    gap: 0.5rem;
+    margin-top: 4rem;
+}
+
+.grid_img {
+    width: 100%;
 }
 
 .image_grid {
@@ -242,20 +254,20 @@
 .image_service {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    height: 5rem;
+    justify-content: center;
+    height: 2rem;
     margin-top: 10rem;
-
-    width: 75%;
-    gap: 2rem;
+    width: 100%;
+    gap: 1rem;
 }
 
 .image_service .box {
-    /* border: 1px solid black; */
-    height: 16rem;
-    width: 18.5%;
-    gap: 1rem;
-    box-shadow: black 1px;
+
+    height: 15rem;
+    width: 25%;
+
+
+
 }
 
 .box1 {
@@ -265,7 +277,7 @@
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 5rem;
+    background-size: 4rem;
     border-radius: 0.5rem;
 
 }
@@ -275,6 +287,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 12rem;
+    font-size: 0.8rem;
+    font-weight: bold;
 
 }
 
@@ -285,7 +299,7 @@
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 5rem;
+    background-size: 4rem;
     border-radius: 0.5rem;
 }
 
@@ -296,7 +310,7 @@
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 5rem;
+    background-size: 4rem;
     border-radius: 0.5rem;
 }
 
@@ -307,7 +321,7 @@
     justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 5rem;
+    background-size: 4rem;
     border-radius: 0.5rem;
 }
 
@@ -319,17 +333,17 @@
     height: 50rem;
     width: 100%;
     margin-top: 10rem;
+    background-repeat: no-repeat;
 
 }
 
 .footer_content {
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
-
+    width: 100%;
     font-weight: bold;
     margin-left: 1rem;
-    justify-content: flex-start;
-    align-items: center;
+    text-align: center;
 
 }
 
@@ -337,18 +351,18 @@
 
     margin-top: 2.5rem;
     font-size: 1.2rem;
-    height: 5rem;
-    width: 100%;
+    height: 2rem;
+
     padding: 1rem;
-    border: 5px solid white;
+    border: 4px solid white;
     background-color: transparent;
 }
 
 .email_content input {
     margin-top: 2.5rem;
     font-size: 1.2rem;
-    height: 5rem;
-    width: 100%;
+    height: 2rem;
+
     padding: 1rem;
     border: 5px solid white;
     background-color: transparent;
@@ -357,33 +371,125 @@
 
 .mess_content input {
     margin-top: 2.5rem;
-    font-size: 3rem;
-    width: 100%;
+    font-size: 1.2rem;
+
     padding: 1rem;
-    height: 8rem;
+    height: 2rem;
     border: 5px solid white;
     background-color: transparent;
     overflow: auto;
 }
-.button{
-    margin-left: 16.5rem;
+
+.button {
+    /* margin-left: 16.5rem; */
     font-size: 2rem;
     margin-top: 2rem;
     padding: 1rem;
     color: #ed92ae;
     font-weight: bold;
-    border: none;
+    border: 1px solid gray;
+    text-align: center;
 }
+
 .black_content {
-    height: 17rem;
-    width: 100%;
+    height: 15rem;
+    border: 1px solid black;
     background-color: #333333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     color: white;
+    justify-content: center;
+    font-size: 1.2rem;
 }
-.black_content span{
+
+.black_content .con p {
+    padding: 1.4rem;
+}
+
+.bottom_content {
+    margin-top: 6rem;
+}
+
+.black_content span {
+
     color: #f6d427;
 }
-  
+
+
+
+
+@media screen and (min-width: 768px) {
+    .banner h1 {
+        font-size: 6rem;
+    }
+
+    .our_products {
+        flex-direction: row;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+
+    .iamge {
+        width: 50%;
+        flex: 1;
+        height: 40rem;
+    }
+
+    .white_content {
+        flex: 1;
+        width: 50%;
+        height: 40rem;
+        background-color: aliceblue;
+    }
+
+    .agency_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+
+    }
+
+    .grid_img {
+        height: 22.5rem;
+        width: 25%;
+    }
+
+    .image_service .box {
+        height: 16rem;
+        width: 17%;
+        gap: 1rem;
+        justify-content: space-between;
+        box-shadow: black 5px;
+    }
+
+    .footer_content {
+        font-size: 5.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .name_content input,
+    .email_content input {
+        border: 5px solid white;
+        width: 50%;
+        height: 4rem;
+    }
+
+    .mess_content input {
+        height: 8rem;
+        width: 50%;
+        font-size: 5rem;
+    }
+    .bottom_content {
+        margin-top: 9rem;
+    }
+}

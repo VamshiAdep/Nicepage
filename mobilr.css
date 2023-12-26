@@ -1,0 +1,29 @@
+    .our_products {
+        flex-direction: row-reverse;
+    }
+
+    .iamge {
+        flex: 1;
+        width: 50%;
+    }
+    
+    .white_content {
+        background-color: aliceblue;
+        flex: 1
+    }
+
+    .agency_container {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+    }
+    .grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.4rem;
+     }
+
+     .grid_img {
+        width: 25%;
+     }
